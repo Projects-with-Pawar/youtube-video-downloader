@@ -8,7 +8,7 @@ To run this application, you need to have Python, Flask, and pytube installed. Y
 
 ```bash
 pip install Flask pytube
-
+```
 ### Usage
     - Clone the repository to your local machine:
 
