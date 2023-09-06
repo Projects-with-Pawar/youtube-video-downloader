@@ -11,6 +11,11 @@ To run this application, you need to have Python, Flask, and pytube installed. Y
 
 ```bash
 pip install Flask pytube
+
+
+info:
+    pytube      15.0.0
+    Flask       2.2.2
 ```
 ### Usage
     - Clone the repository to your local machine:
