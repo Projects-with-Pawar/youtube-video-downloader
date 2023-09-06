@@ -2,6 +2,9 @@
 
 YouTube Video Downloader is a simple Flask web application that allows users to download YouTube videos by providing a video URL.
 
+![YouTube Video Downloader Screenshot](https://github.com/Projects-with-Pawar/youtube-video-downloader/blob/main/output-SS/ss1.png)
+
+
 ## Installation
 
 To run this application, you need to have Python, Flask, and pytube installed. You can install the necessary packages using pip:
