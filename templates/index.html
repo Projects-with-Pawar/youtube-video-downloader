@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Video Downloader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="h-56 mx-20 font-mono">
+    <h1 class="text-center text-4xl text-red-600 font-bold  my-10">YouTube Video Downloader</h1>
+    <div class=" flex justify-center my-20">
+
+        <form method="POST" class="border p-4 px-10 shadow-lg">
+            <input type="text" name="youtube_url" placeholder="Enter YouTube URL" required 
+            class="px-20 mx-10 text-md">
+            <!-- <input type="submit" value="Download"> -->
+            <input type="submit" value="Get Video Info"
+            class="hover:text-red-600 px-4 py-2 border border-white hover:rounded hover:border-red-600 text-2xl">
+
+        </form>
+    </div>
+
+    {% if video_info %}
+    <h2 class="text-center text-2xl ">Video Information:</h2>
+    <p class="my-2"><strong>Title:</strong> {{ video_info.title }}</p>
+    <p class="my-2"><strong>Author:</strong> {{ video_info.author }}</p>
+    <p class="my-2"><strong>Length:</strong> {{ video_info.length }} seconds</p>
+    <p class="my-2"><strong>Views:</strong> {{ video_info.views }}</p>
+    
+    {% if download_link %}
+    <div class="flex justify-center ">
+        <a href="{{ download_link }}" download 
+        class="text-red-600 px-4 py-2 border rounded hover:border-red-600 text-2xl shadow-lg "
+        >
+            <button>Download</button>
+        </a>
+    </div>
+    {% endif %}
+    {% endif %}
+</body>
+</html>
